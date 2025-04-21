@@ -1,0 +1,17 @@
+{
+  "name": "playwriting",
+  "version": "1.0.0",
+  "description": "This project contains comprehensive end-to-end tests for the TodoMVC application using Playwright.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.14.1"
+  }
+}
