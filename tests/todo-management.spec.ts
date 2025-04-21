@@ -75,8 +75,8 @@ test.describe('Todo Management', () => {
         // Verify that the todo was deleted
         await expect(page.locator('.todo-list li')).toHaveCount(0);
 
-        // Verify the counter shows 0 items left
-        await expect(page.locator('.todo-count')).toContainText('0 items left');
+        // Verify the footer is not visible when no todos exist
+        await expect(page.locator('.footer')).not.toBeVisible();
     });
 
     test('should update the item count correctly', async ({ page }) => {
